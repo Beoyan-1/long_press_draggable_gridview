@@ -24,7 +24,7 @@
 
 This package supports drag & drop widgets inside the GridView.builder for multiplatform. It provides all the properties which are available in Gridview.builder and easy to implement with the few lines of code.
 
-This project is based on <a href="https://pub.dev/packages/image_cropping">
+This project is based on <a href="https://pub.dev/packages/flutter_draggable_gridview">
 <img src="https://img.shields.io/pub/v/flutter_draggable_gridview?label=flutter_draggable_gridview" alt="flutter_draggable_gridview version"></a> modifying the problem that only one gridview can exist at the same time, and adding support for CustomScrollView
 
 
