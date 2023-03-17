@@ -28,6 +28,9 @@ This project is based on <a href="https://pub.dev/packages/image_cropping">
 <img src="https://img.shields.io/pub/v/flutter_draggable_gridview?label=flutter_draggable_gridview" alt="flutter_draggable_gridview version"></a> modifying the problem that only one gridview can exist at the same time, and adding support for CustomScrollView
 
 
+### Draggable GridView.
+![Draggable GridView](https://github.com/Beoyan-1/long_press_draggable_gridview/blob/main/demonstration.gif)
+
 ## Usage
 
 ### Example
