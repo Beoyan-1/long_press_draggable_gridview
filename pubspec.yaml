@@ -1,7 +1,7 @@
 name: long_press_draggable_gridview
 description: A GridView that can be sorted by dragging
 version: 0.0.1
-homepage:
+homepage: https://github.com/Beoyan-1/long_press_draggable_gridview
 
 environment:
   sdk: '>=2.19.4 <3.0.0'

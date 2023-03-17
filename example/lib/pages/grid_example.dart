@@ -50,10 +50,12 @@ class GridExampleState extends State<GridExample> {
   }
 
   Widget feedback(List<DraggableGridItem> list, int index) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     return Container(
       child: list[index].child,
-      width: 200,
-      height: 150,
+      width: width / 2,
+      height: (width / 2) / width * (height / 3),
     );
   }
 
