@@ -109,8 +109,6 @@ class DraggableGridViewBuilderState extends State<DraggableGridViewBuilder> {
 
   @override
   Widget build(BuildContext context) {
-
-
     return GridView.builder(
       scrollDirection: widget.scrollDirection,
       reverse: widget.reverse,
@@ -129,7 +127,9 @@ class DraggableGridViewBuilderState extends State<DraggableGridViewBuilder> {
       clipBehavior: widget.clipBehavior,
       gridDelegate: widget.gridDelegate,
       itemBuilder: (_, index) {
-        return _buildItem(index, _list[index]);
+        return (!_list[index].isDraggable)
+            ? _list[index].child
+            : _buildItem(index, _list[index]);
       },
       itemCount: _list.length,
     );
@@ -158,6 +158,7 @@ class DraggableGridViewBuilderState extends State<DraggableGridViewBuilder> {
       onDragCompleted: () {
         //拖动完成，刷新状态
         widget.dragCompletion(_list, lastIndex, overlapIndex);
+        myData.dragCallback?.call(context, false);
         setState(() {
           showSrcElement = false;
           overlapIndex = -1;
